@@ -26,6 +26,27 @@ describe('Thermostat', () => {
     });
   });
 
+  describe('levels of energy usage', () => {
+    it('is below 18 degrees', () => {
+      for (let i = 0; i < 3; i++) {
+        thermostat.down();
+      }
+      expect(thermostat.energyUsage()).toEqual('low-usage');
+    });
+
+    it('is between 18 and 25 degrees', () => {
+      expect(thermostat.energyUsage()).toEqual('medium-usage');
+    });
+
+    it('is high usage', () => {
+      thermostat.powerSavingMode = false;
+      for (let i = 0; i < 6; i++) {
+        thermostat.up();
+      };
+      expect(thermostat.energyUsage()).toEqual('high-usage');
+    });
+  });
+
     it('should start at 20 degrees', () => {
     expect(thermostat.getCurrentTemperature()).toEqual(20);
     });
@@ -71,5 +92,6 @@ describe('Thermostat', () => {
       thermostat.resetTemperature();
       expect(thermostat.getCurrentTemperature()).toEqual(20);
     });
+
 
 });
