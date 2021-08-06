@@ -12,19 +12,22 @@
       <p>
         <button id="temperature-up">+</button>
         <button id="temperature-down">-</button>
-        <button id="temperature-reset">reset</button>
-        power saving mode is <span id="power-saving-status"></span>
-        <button id="powersaving-on">PSM on</button>
-        <button id="powersaving-off">PSM off</button>
+        <button id="temperature-reset">RESET</button>
+
+      </p>
+      <p>
+        Power Saving Mode: <span id="power-saving-status"></span>
+        <button id="powersaving-on">ON</button>
+        <button id="powersaving-off">OFF</button>
       </p>
     </section>
 
     <section>
+      <h3>Current Temperature is:<span id="current-temperature"</span></h3>
         <form id="select-city">
           <input id="current-city" type="text" placeholder="Enter City"></input>
-          <input type="submit" placeholder="Submit"></input>
+          <input type="submit"></input>
         </form>
-          <h3>Current Temperature is:<span id="current-temperature"</span></h3>
     </section>
       <script src="src/thermostat.js"></script>
       <script src="src/index.js"></script>

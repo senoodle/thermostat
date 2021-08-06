@@ -1,5 +1,7 @@
 body {
-  background-color: lightyellow;
+    color: #797979;
+    background: #ffffff;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
@@ -9,4 +11,12 @@ h1 {
 h3 {
   color: green;
 
+}
+
+button:hover{
+  background-color:lightpink;
+}
+
+button:focus{
+  background-color:lightyellow;
 }

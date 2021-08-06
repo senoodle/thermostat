@@ -24,14 +24,14 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector('#powersaving-on').addEventListener('click', () => {
     thermostat.switchPowerSavingModeOn();
 
-    document.querySelector('#power-saving-status').innerText = 'on';
+    document.querySelector('#power-saving-status').innerText;
     updateTemperature();
   });
 
   document.querySelector('#powersaving-off').addEventListener('click', () => {
     thermostat.switchPowerSavingModeOff();
 
-    document.querySelector('#power-saving-status').innerText = 'off';
+    document.querySelector('#power-saving-status').innerText;
     updateTemperature();
   });
 
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelector('#current-temperature').innerText = data.main.temp;
     })
   }
-  
+
 
   document.querySelector('#select-city').addEventListener('submit', (event) => {
     event.preventDefault();
