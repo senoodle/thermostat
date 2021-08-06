@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-     <meta http-equiv="refresh" content="30" />
-    <title>Thermostat</title>
-    <link rel="stylesheet" href="src/index.css">
+     <meta http-equiv="refresh" content="35" />
+     <link rel="stylesheet" href="src/index.css">
   </head>
+      <title>Thermostat</title>
+      <h1> Thermostat </h1>
+
   <body>
     <section>
-      <h1> Thermostat </h1>
-      <h2 id="temperature"></h2>
-      <p>
-        <button id="temperature-up">+</button>
-        <button id="temperature-down">-</button>
-        <button id="temperature-reset">RESET</button>
+      <div class="up-down-buttons">
 
-      </p>
+      <h2 id="temperature"></h2>
+        <p>
+          <button id="temperature-up">+</button>
+          <button id="temperature-down">-</button>
+            <button id="temperature-reset">RESET</button>
+        </p>
+      </div>
+      <div class="psm-button">
       <p>
         Power Saving Mode: <span id="power-saving-status"></span>
         <button id="powersaving-on">ON</button>
         <button id="powersaving-off">OFF</button>
       </p>
+          </div>
     </section>
 
     <section>
+      <div class="current-temp">
+        <p>
       <h3>Current Temperature is:<span id="current-temperature"</span></h3>
         <form id="select-city">
           <input id="current-city" type="text" placeholder="Enter City"></input>
           <input type="submit"></input>
         </form>
+        </p>
+        </div>
     </section>
+
       <script src="src/thermostat.js"></script>
       <script src="src/index.js"></script>
   </body>

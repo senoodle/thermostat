@@ -1,22 +1,41 @@
 body {
     color: #797979;
-    background: #ffffff;
+    background-color: lightyellow;
     font-family: 'Montserrat', sans-serif;
+    display: flow-root;
+    align-items: center;
+    justify-content: center;
+
 }
 
 h1 {
   color: pink;
+  text-align: center;
 }
 
-h3 {
-  color: green;
 
+.up-down-buttons{
+  text-align: center;
+}
+
+.psm-button{
+  text-align: center;
+}
+
+.current-temp{
+  text-align: center;
 }
 
 button:hover{
-  background-color:lightpink;
+  color:#DDDDDD;
+   border-color:#DDDDDD;
 }
 
 button:focus{
-  background-color:lightyellow;
+  background-color:#AAAAAA;
+}
+
+button:active{
+  color:#BBBBBB;
+  border-color:#BBBBBB;
 }
